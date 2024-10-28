@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello word</h1>
+
+    <script>
+        // dataType
+// undefined, null, Boolean, String, Symbol, Number, and Object
+
+// Storing values with assigment operator
+var a;
+var b = 2;
+console.log(a);
+var a = 7;
+b = a;
+
+console.log(a);
+
+// Initializing variablesw/ assignment operator
+var a = 9;
+
+// Uninitialized/ variables
+// initialize these three variables
+var a = 5;
+var b = 10;
+var c = "I am a";
+// do not change code below this line
+a = a + 1;
+b = b + 5;
+c = c + " string!";
+
+//Case sensitivity in variables
+//declarations
+var StUDLyCapVaR;
+var ProperCamelCase;
+var TitleCaseOver;
+
+//Assigments
+STUDlyCapVar = 10;
+ProPERCamelCASE = "a string";
+TitleCaseOver = 7000;
+
+//Adding numbers
+var sum = 10 + 10;
+console.log(sum);
+
+//Subtracting numbers
+var differene = 45 - 33;
+
+
+//Multiplaying numbers
+var product = 8 * 0;
+
+
+//Dividing numbers
+var quotient = 66 / 0;
+
+// incrementing number
+var myVar = 88;
+//only change code below this line
+myVar = myVar + 1; //not this
+myVar++; //to this
+
+
+//Decrementing numbers
+var quotient = 66 / 0;
+
+// incrementing number
+var myVar = 88;
+//only change code below this line
+myVar = myVar - 1; //not this
+myVar--; //to this
+
+
+//Decimal numbers
+var outDecimal = 5.7;
+//only change code below this line
+var myDeci
+
+
+
+//Multiply decimal
+var product = 2.0 * 2.5;
+console.log(product);
+
+
+//Divide decimals
+var quotioent = 4.4 / 2.0;
+console.log(quotioent);
+
+
+//Finding a remainder
+//only change code below this line
+var remainder;
+remainder = 11 % 3;
+console.log(remainder);
+
+
+//Compound assignment with augmented addition & subtraction & multiplication & division
+var a = 3;
+var b = 4;
+var c = 5;
+//only change code below this line
+a = a + 7; //no this
+b = b - 7; //no this
+c = c * 7; //no this
+c = c / 7; //no this
+a += 7; //to this
+b -= 7; //to this
+c *= 7; //to this
+c /= 7; //to this
+
+
+
+//Escaping literal quoted in string
+var myStr = "I am a \"double quoted\" string inside \"double quotes";
+console.log(myStr);
+
+
+//Concatnathing string with plus operator
+//example
+var ourStr = "i come first. " + "i come secound." ;
+//only change code below this line
+var myStr = "This is the start. " + "this is secound."
+console.log(myStr)
+
+
+//Concatenating string with plus equals operagtion
+var ourStr = "i come first "
+ourStr += "hehehe"
+
+
+//Appending variables to string
+var somting = "dont";
+var wrong = "worie";
+wrong += somting;
+
+
+//Find length of string
+var panjang = 0;
+var nam = "sialan";
+console.log(panjang = nam.length);
+
+
+//Bracket notaticon to find first character in string
+var firstName = "";
+var lastName = "love";
+firstName = lastName[3];
+console.log(firstName);
+
+
+//Bracket notation to find Nth & last character in string
+var firstName = "love";
+var thisIs = firstName[2];
+var thisIs = firstName[firstName.length - 1];
+console.log(thisIs);
+
+
+//Work blanks
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
+    var result = "";
+    result += "the " + " " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb;
+    return result;
+}
+console.log(wordBlanks("dog", "big", "ran", "quickly"));
+
+
+//Modify array data with index
+var myArray = [18, 30, 50];
+myArray[0] = 20;
+console.log(myArray);
+
+
+//Access multi-dimensional arrays with index
+var myArray = [[1,2,3], [4,5,6], [7,8,9]];
+var myData = myArray[2][2];
+console.log(myData);
+
+
+//Manipulate array with pop()
+var myArray = [["cat", 3], ["john",6]];
+var myData = myArray.pop();
+console.log(myArray);
+
+
+// Passing values to functions with argument
+function functionWith(a, b){
+    console.log(a + b);
+}
+functionWith(10, 5);
+
+
+//Global vs local scope in functions
+var outerWear = "T-shirt";
+function myOutfit(){
+    var outerWear = "sweater";
+    return outerWear;
+}
+console.log(myOutfit());
+console.log(outerWear);
+
+
+//Return a value from a function with return
+function timesFive(num){
+    return num * 5;
+}
+console.log(timesFive(5));
+
+
+//Stand in line
+function nextInLine(arr, item){
+    arr.push(item);
+    return arr.shift();
+}
+var testArr = [1,2,3,4,5];
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
+
+// Use conditional logic with is statements
+function trueOrFalse(wasThatTrue){
+    if(wasThatTrue){
+      return "yes, that was true"  
+    }
+    return "no, that was false"
+}
+console.log(trueOrFalse(false));
+
+
+//Comparison with the equality operator
+function testEqual(val){
+    if (val == 12){
+        return "equal";
+    }
+    return "not equal";
+}
+console.log(testEqual(11));
+
+
+//Comparison with the strict equality operator
+function testStrict(val){
+    if (val === 7){
+        return "equal";
+    }
+    return "not equal";
+}
+console.log(testStrict(10));
+
+
+//Practice comparing different values
+function compareEquality(a, b){
+    if (a == b){
+        return "equal";
+    }
+    return "not equal";
+}
+console.log(compareEquality(10, "10"));
+
+
+//Compalation with the strict inequality opera
+function testStrictNotEqual(val){
+    if (val !== 17){
+        return "not equal";
+    }
+    return "equal";
+}
+console.log(testStrictNotEqual(10));
+
+
+//Compalation with the logical and operator
+function testGreaterThan(val){
+    if (val > 100){
+        return "over 100";
+    }if(val > 10){
+        return "over 10"
+    }
+    return "10,or under";
+}
+console.log(testGreaterThan(10));
+
+
+//Comparison with the greater than or equal to operator
+function testGreaterOrEqual(val){
+    if (val >= 20){
+        return "20 or over";
+    }if(val >= 10){
+        return "10 or over"
+    }
+    return "less than 10";
+}
+console.log(testGreaterOrEqual(10));
+
+
+//Chaining if else statements 
+function test(num){
+    if (num <= 5){
+        return "Tiny";
+    } else if (num <= 10){
+        return "small";
+    } else if (num <= 15){
+        return "medium";
+    } else if (num <= 20){
+        return "large";
+    } else{
+        return "Huge"
+    }
+}
+console.log(test(10))
+
+
+//Golf code
+var names = ["hole-in-one!", "birdie", "eagle", "par", "bogey", "double bogey", "woreit"];
+function golfScore(par, strokes){
+    if(strokes == 1){
+        return names[0]
+    }else if (strokes <= par - 2){
+        return names[1]
+    }else if (strokes  == par - 1){
+        return names[2]
+    }else if (strokes == par){
+        return names[3]
+    }else if (strokes ==  par + 1){
+        return names[4]
+    }else if (strokes == par + 2){
+        return names[5]
+    }else if (strokes >= par + 3){
+        return names[6]
+    }
+}
+console.log(golfScore(5, 4));
+
+
+//Returning boolean values from functirons
+function isLess(a, b){
+    return a < b;
+}
+console.log(isLess(22, 15));
+
+
+//Counting cards
+var count = 0;
+function cc(card){
+    switch(card){
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+            count++;
+            break;
+        case 10:
+        case "J":
+        case "Q":
+        case "K":
+        case "A":
+            count--;
+            break;
+    }
+    var holdbet = 'Hold'
+    if (count > 0){
+        holdbet = 'Bet'
+    }
+    return count + " " + holdbet;
+}
+cc(2); cc('K'); cc(10); cc('K'); cc('A');
+console.log(cc(4));
+
+
+//Updating object properties
+var myDog = {
+    "name": "Coder",
+    "legs": "4",
+    "tails": "1",
+    "friemds": ["FreeCodeCamp Campers"]
+};
+myDog.name = "Happy Coder";
+
+
+//Add new properties to an object
+var myDog = {
+    "name": "Coder",
+    "legs": "4",
+    "tails": "1",
+    "friemds": ["FreeCodeCamp Campers"]
+};
+myDog['bark'] = "woof!"
+
+
+//Delete properties from an object
+var myDog = {
+    "name": "Coder",
+    "legs": "4",
+    "tails": "1",
+    "friemds": ["FreeCodeCamp Campers"],
+    "bark": "woof"
+};
+delete myDog.tails;
+
+
+//Testing objects for properties
+var myObj = {
+    gift: "pony",
+    pet: "kitten",
+    bed: "sleigh",
+};
+function checkObj(checkProp){
+    if (myObj.hasOwnProperty(checkProp)){
+        return myObj[checkProp];
+    }else{
+        return "Not found"
+    }
+}
+console.log(checkObj("gift"));
+
+
+//Accessing nested objects
+var myStorage = {
+    "car": {
+        "inside": {
+            "glove box": "maps", 
+            "passenger seat": "crumbs"
+        },
+        "outside": {
+            "trunk": "jack"
+        }
+    }
+};
+var gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents);
+
+
+//Accessing Nested arrays
+var myPlants = [
+    {
+        type: "flowers",
+        list: [
+            "rose",
+            "tulip",
+            "dandelion",
+        ]
+    },
+    {
+        type: "trees",
+        list: [
+            "fir",
+            "pine",
+            "birch"
+        ]
+    }
+];
+var secoundTree = myPlants[1].list[1];
+
+
+//Iterate with while loops
+var myArray = [];
+var i = 1;
+while(i <= 5){
+    myArray.push(i);i++
+}
+console.log(myArray);
+
+
+//Iterate with for loops & Iterate odd numbers with a for loop
+var myArray = [];
+var myPlus = [];
+var myLunch = [];
+var myNight = [];
+for(var i = 5; i > 0; i--){
+    myArray.push(i);
+}for(var x = 1; x <= 5; x++){
+    myPlus.push(x);
+}for(var z = 1; z <= 10; z += 2){
+    myLunch.push(z);
+}for(var c = 10; c > 1; c -= 2){
+    myNight.push(c);
+}
+console.log(myArray, myPlus, myLunch, myNight);
+
+
+//Iterate with do... while loops
+var myArray = [];
+var i = 10;
+
+do {
+    myArray.push(i); i++;
+} while (i < 5)
+console.log(i, myArray);
+
+
+//Use the parseInt function with a radix
+function convertTo(str){
+    return parseInt(str, 2)
+}
+convertTo("10011");
+
+
+//Use the conditional (ternary) operator
+function checkEqual(a, b){
+    return a === b ? true : false;
+    return a === b;
+}
+checkEqual(1, 2);
+
+
+//Differences between the var and let keywords
+let catName = "Quincy";
+let quote;
+catName = "beau";
+function catTalk(){
+    "use strict";
+    catName = "Oliver";
+    quote = catName + " says meow!";
+}
+catTalk();
+
+
+//Compare scopes of the var and let keyword
+function checkScope(){
+    "Use strict";
+    let i = "function scope";
+    if (true) {
+        let i = "block scope";
+        console.log("Block scope i is: ", i);
+    }
+    console.log("Function scope i is: ", i);
+    return i;
+}
+console.log(checkScope());
+
+
+//Declare a read-only variable eith the const keyword
+function print(str){
+    "use strict";
+    const SECTENCE = str + " is cool!";
+    for(let i = 0; i < str.length; i+=2){
+        console.log(SECTENCE);
+    }
+}
+print("freeCodeCamp")
+
+
+//Mutate an array declared with const
+const a = [5,7,2];
+function editInPlace(){
+    "use strict";
+    //a = [2,5,7];
+    a[0] = 2;
+    a[1] = 5;
+    a[2] = 7;
+}
+editInPlace();
+console.log(a);
+
+
+//Write arrows functions with parmeters
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+console.log(myConcat([1, 2, 3, 4, 5]));
+
+
+//Write higher order arrow functions
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+const squareList = (arr) => {
+    const squaredIntergers = arr.filter(num => Number.isInteger(num) && num > 0).map(x => x * x );
+    return squaredIntergers;   
+};
+const squaredIntergers = squareList(realNumberArray);
+console.log(squaredIntergers);
+
+
+//Write higher order arrow functions
+const increment = (function() {
+    return function increment(number, value = 1){
+        return number + value;
+    };
+})();
+console.log(increment(5, 2));
+console.log(increment(5));
+
+
+//Use the rest operator with function parameters
+const sum = (function(){
+    return function sum(...args){
+        return args.reduce((a, b) => a + b, 0);   
+    };
+})();console.log(sum(1,2,3, 10));
+
+
+//Use the spread operarator to evaluate arrays in-place
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+(function() {
+    arr2 = [...arr1];
+    arr1[0] = 'potato'
+})();
+console.log(arr2);
+
+
+// Destructuring assigment with nested objects
+const LOCAL_FORECAST = {
+    today: { min: 72, max: 83},
+    tomorrow: { min: 73.3, max: 84.6}
+};
+function getMaxOfTmrw(forecast){
+    "use strict";
+    const { tomorrow : {max : getMaxOfTmrw}} = forecast;
+    return getMaxOfTmrw;
+}
+console.log(getMaxOfTmrw(LOCAL_FORECAST));
+
+
+//Use destructing assigment to assign variables from arrays
+const [z, x, , y] = [1,2,3,4,5,6];
+console.log(z,x,y);
+
+let a = 8, b = 6;
+(() => {
+    "use strict";
+    [a, b] = [b, a]
+})();
+console.log(a);
+console.log(b);
+
+
+//Use destructing assigment with the rest operator
+const source = [1,2,3,4,5,6,7,8,9,10];
+function removeFirstTwo(list){
+    const [ , , ...arr] = list;
+    return arr;
+}
+const arr = removeFirstTwo(source);
+console.log(arr);
+console.log(source);
+
+
+//Use destructuring assigment to pass an object as a function,s parameters
+const stats = {
+    max: 56.78,
+    standard_deviation: 4.34,
+    median: 34.54,
+    mode: 23.87,
+    min: -0.75,
+    average: 35.85
+};
+const half = (function() {
+    return function half({max, min }) {
+        return (max + min) / 2.0;
+    };
+})();
+console.log(stats);
+console.log(half(stats));
+
+    </script>
+</body>
+</html>
